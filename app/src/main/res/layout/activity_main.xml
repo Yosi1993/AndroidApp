@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white"
+    android:padding="24dp"
+    android:gravity="center_horizontal">
+
+    <!-- Título centrado -->
+    <TextView
+        android:id="@+id/tituloTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Formulario de Saludo"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Campo para ingresar el nombre -->
+    <EditText
+        android:id="@+id/nombreEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Ingresa tu nombre"
+        android:padding="12dp"
+        android:background="@drawable/rounded_edittext"
+        android:inputType="textPersonName"
+        android:layout_marginBottom="24dp"/>
+
+    <!-- Botón para mostrar saludo -->
+    <Button
+        android:id="@+id/saludoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar Saludo"
+        android:backgroundTint="@color/teal_200"
+        android:textColor="@color/white"
+        android:padding="12dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="24dp" />
+
+    <!-- Saludo dinámico -->
+    <TextView
+        android:id="@+id/saludoTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hola!"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:padding="16dp"
+        android:visibility="gone"
+        android:layout_gravity="center" />
+
+</LinearLayout>
